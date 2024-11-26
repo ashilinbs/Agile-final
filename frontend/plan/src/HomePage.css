@@ -1,0 +1,440 @@
+/* General Dashboard Styles */
+
+.dashboard {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  background-image: url("https://img.freepik.com/free-psd/3d-illustration-with-berries-still-life_23-2151385119.jpg?semt=ais_hybridhttps://img.freepik.com/free-psd/3d-illustration-with-berries-still-life_23-2151385119.jpg?semt=ais_hybrid");
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center center; /* Center the image */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top */
+}
+
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    gap: 20px;
+    background-color: #FF6347;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Makes navbar span the full width */
+    justify-content: center; /* Center-align navbar items */
+    position: sticky; /* Ensures navbar stays at the top */
+    top: 0; /* Keeps the navbar at the top of the screen */
+    z-index: 1000; /* Ensures navbar is above other elements */
+  }
+  
+  /* Navbar Links & Logout Button */
+  .navbar a, .logout-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Make the links and button visible without hover */
+  .navbar a {
+    color: rgb(171, 151, 50);
+  }
+  
+  .logout-btn {
+    background-color: #E53935;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #C62828;
+  }
+  
+  /* Navbar Hover Effect */
+  .navbar a:hover, .logout-btn:hover {
+    transform: scale(1.1);
+    color: #FFEB3B;
+  }
+  
+  /* Content Section */
+  .content {
+    text-align: center;
+    max-width: 800px;
+    margin-top: 30px; /* Adds some space after navbar */
+  }
+  
+  /* Heading */
+  .content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Image Gallery */
+  .image-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Back Button */
+  .back-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #FF6347;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #e55347;
+    transform: scale(1.05);
+  }
+  
+  /* Fade In Animation for Text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/* Overview Section */
+.overview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .overview h2 {
+    color: #FF6347;
+    font-size: 1.8rem;
+  }
+  
+  .overview p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* User Statistics */
+  .statistics {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .statistics h2 {
+    color: #FF6347;
+    font-size: 1.8rem;
+  }
+  
+  .stats-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .stat-item p {
+    font-size: 1.5rem;
+    color: #FF6347;
+    font-weight: bold;
+  }
+  
+  /* Quote Section */
+  .quote-section {
+    margin-top: 30px;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  /* Goal Tracker */
+.goal-tracker {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .goal-tracker h2 {
+    color: #FF6347;
+    font-size: 1.8rem;
+  }
+  
+  .goal-tracker ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .goal-tracker li {
+    margin: 8px 0;
+  }
+  
+  /* Tips & Insights */
+  .tips-insights {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .tips-insights h2 {
+    color: #FF6347;
+    font-size: 1.8rem;
+  }
+  
+  .tips-insights ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .tips-insights li {
+    margin: 8px 0;
+  }
+  
+  .tips-insights strong {
+    color: #333;
+  }
+  
+  /* Updated Styles for Statistics Section */
+  .statistics {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .statistics h2 {
+    color: #FF6347;
+    font-size: 1.8rem;
+  }
+  
+  .stats-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .stat-item p {
+    font-size: 1.5rem;
+    color: #FF6347;
+    font-weight: bold;
+  }
+  /* HomePage.css */
+
+/* General styling for the navbar links */
+.navbar a,
+.navbar .profile-btn,
+.navbar .logout-btn {
+  color: #333; /* Replace #333 with the color you want */
+  font-size: 16px; /* Ensure font size consistency */
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Hover effect for all links in the navbar */
+.navbar a:hover,
+.navbar .profile-btn:hover,
+.navbar .logout-btn:hover {
+  color: #555; /* A slightly darker shade on hover */
+}
+
+/* Specific styling for the profile button */
+.profile-btn {
+  color: #333; /* Same color as other links */
+  font-size: 16px; /* Ensures the size matches other links */
+}
+/* HomePage.css */
+
+.dashboard {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a, .profile-btn, .logout-btn {
+  color: #c39f12;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover, .profile-btn:hover, .logout-btn:hover {
+  color: #ffc107;
+}
+
+.content {
+  animation: fadeIn 1.5s ease;
+}
+
+.profile-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease;
+}
+
+h1, h2, h3 {
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.overview, .statistics, .goal-tracker, .tips-insights, .quote-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease;
+}
+
+.stat-item {
+  display: inline-block;
+  text-align: center;
+  width: 22%;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.stat-item h3 {
+  color: #28a745;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.image-container img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.tips-insights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-insights li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.quote-section blockquote {
+  font-style: italic;
+  font-size: 24px;
+  color: #6c757d;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #007bff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

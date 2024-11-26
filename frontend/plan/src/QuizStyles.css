@@ -1,0 +1,136 @@
+/* Main container */
+.quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .game-toggle button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-toggle button:hover {
+    background-color: #45a049;
+  }
+  
+  .game-toggle button:focus {
+    outline: none;
+  }
+  
+  .quiz-content,
+  .game-content {
+    padding: 20px;
+  }
+  
+  .quiz-header,
+  .game-header {
+    margin-bottom: 20px;
+  }
+  
+  .quiz-header h1,
+  .game-header h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+  }
+  
+  .question-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .option-btn:active {
+    background-color: #388e3c;
+  }
+  
+  .game-input {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .game-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .game-btn:active {
+    background-color: #388e3c;
+  }
+  
+  .game-body p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 15px;
+    }
+  
+    .quiz-header h1,
+    .game-header h1 {
+      font-size: 2rem;
+    }
+  
+    .question h3,
+    .game-body p {
+      font-size: 1.2rem;
+    }
+  
+    .option-btn {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  

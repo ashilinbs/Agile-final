@@ -1,0 +1,196 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: calc(100vh - 70px); /* Adjust height to exclude Navbar height (e.g., 70px) */
+  text-align: center;
+  position: relative;
+  padding-top: 70px; /* Same height as Navbar to avoid content overlap */
+}
+
+.explore-container {
+  position: relative; /* Adjust position relative to the content area */
+  margin-top: 20px; /* Adjust to create some space from other elements */
+}
+
+.explore-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.explore-button:hover {
+  background-color: #45a049;
+}
+
+  .intro-text {
+    font-size: 2.5rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  .tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF6347;
+    margin-top: 20px;
+  }
+  .explore-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Carousel styling */
+  .carousel .slide img {
+    width: 100%; /* Make image width full */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit the height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+  }
+  
+  .carousel .control-arrow {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken arrows */
+  }
+  
+  /* Heading Styling */
+  .heading {
+    font-family: 'Snackaroo', sans-serif; /* Similar font to Snackaroo */
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333; /* Darker color for text */
+  }
+  
+  /* Explore More Button Container */
+  .explore-container {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Explore More Button Styling */
+  .explore-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .explore-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Carousel styling */
+  .carousel {
+    max-width: 100%; /* Ensure carousel takes full width */
+    margin: 0 auto; /* Center the carousel */
+  }
+  /* Bold text for top content */
+.intro-text,
+.tagline {
+  font-weight: bold;
+}
+
+/* Icon styling */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.top-icon {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #ff6347; /* Tomato color */
+}
+
+/* Animation for Snackaroo */
+.animated-text {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Custom styles for other elements */
+/* Header Section */
+.header {
+  background-color: #FFA500; /* Orange color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.header-title {
+  font-weight: bold;
+}
+
+.header-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.header-icon:hover {
+  color: #ffebcd; /* Lighter shade for hover effect */
+}
+
+/* Bold text for top content */
+.intro-text,
+.tagline {
+  font-weight: bold;
+}
+
+/* Icon styling */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.top-icon {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #ff6347; /* Tomato color */
+}
+
+/* Animation for Snackaroo */
+.animated-text {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

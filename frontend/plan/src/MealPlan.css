@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+/* Meal Plan Container */
+.meal-plan {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-image: url("https://th.bing.com/th/id/OIP.VLcLtgJ0xBmMPWUUuJh-xgHaFl?pid=ImgDet&w=184&h=138&c=7&dpr=1.3");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Title Styling */
+.meal-plan-title {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column; /* Align fields in a single column */
+  gap: 15px; /* Space between fields */
+}
+
+/* Label Styling */
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between label and input field */
+  color: #333333;
+}
+
+/* Input and Select Styling */
+input,
+select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  width: 100%; /* Ensure full width within the container */
+  box-sizing: border-box; /* Consistent sizing */
+  background-color: #f9f9f9; /* Light background for input fields */
+  color: #333333; /* Dark text for readability */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff; /* Highlighted border on focus */
+}
+
+/* Submit Button Styling */
+button.submit-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.submit-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+/* Back Button Styling */
+.back-button {
+  background-color: #cccccc;
+  color: #333333;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  display: block; /* Center-align the button */
+  width: 150px;
+  margin: 20px auto; /* Centered and spaced from content */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #bbbbbb;
+  transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+/* Result Section */
+.result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 599px) {
+  .meal-plan {
+    padding: 20px;
+  }
+
+  .meal-plan-title {
+    font-size: 24px;
+  }
+
+  button.submit-button,
+  .back-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

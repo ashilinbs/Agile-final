@@ -1,0 +1,315 @@
+
+.history-container {
+    background-color: #c8d418; /* Light gray background */
+    border-radius: 20px;
+    padding: 70px;
+    margin: 50px auto;
+    width: 80%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .chart-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sticker-left, .sticker-right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  
+  .sticker-left {
+    top: 30px;
+    left: -60px; /* Position on the left outside the container */
+    background-image: url('https://th.bing.com/th?q=Food+Background+Images+Download&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247');
+  }
+  
+  .sticker-right {
+    top: 30px;
+    right: -60px; /* Position on the right outside the container */
+    background-image: url('https://th.bing.com/th?q=Food+Background+Images+Download&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247');
+  }
+  
+  /* Title styling */
+  .history-container h2 {
+    text-align: center;
+    color: #4b9cd3;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Chart card styling */
+  .chart-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .chart-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Predicted history list */
+  .predicted-history-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  /* History item cards */
+  .history-item {
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    box-shadow: 6px 6px 12px #b0b0b0, -6px -6px 12px #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+  
+  .history-item:hover {
+    box-shadow: 8px 8px 16px #a0a0a0, -8px -8px 16px #ffffff;
+  }
+  
+  /* Prediction title styling */
+  .prediction-info h3 {
+    color: #4b9cd3;
+    margin: 10px 0;
+  }
+  
+  .prediction-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .no-history-message {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+  }
+  /* PredictedHistory.css */
+
+/* Gradient background with animation */
+.history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #4b9cd3, #76c7c0, #ffcd94, #f28482);
+    background-size: 300% 300%;
+    animation: gradient-animation 8s ease infinite;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gradient animation */
+  @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Styling for the title */
+  .history-container h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Card for chart */
+  .chart-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  /* PredictedHistory.css */
+
+.history-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .history-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .history-container::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  /* PredictedHistory.css */
+
+.history-container {
+    background-color: #aac60d; /* Light gray background */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .chart-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sticker {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d1e7dd; /* Light green sticker color */
+  }
+  
+  .sticker-left {
+    top: 50px;
+    left: -30px;
+  }
+  
+  .sticker-right {
+    top: 50px;
+    right: -30px;
+  }
+  
+  
+  .circle-sticker {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 105, 180, 0.7); /* Light pink */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .circle-sticker.left {
+    top: 20px;
+    left: -30px;
+  }
+  
+  .circle-sticker.right {
+    top: 20px;
+    right: -30px;
+  }
+  
+  .circle-sticker.large {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(60, 179, 113, 0.7); /* Medium Sea Green */
+    top: 80px;
+  }
+  
+  .circle-sticker.large.left {
+    left: -50px;
+  }
+  
+  .circle-sticker.large.right {
+    right: -50px;
+  }
+  
+  
+  /* Other styles remain the same... */
+  .history-container {
+    background-color: #f5f5f5; /* Light gray background */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .chart-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sticker-left, .sticker-right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  
+  .sticker-left {
+    top: 30px;
+    left: -60px; /* Position on the left outside the container */
+    background-image: url('https://th.bing.com/th?q=Food+Background+Images+Download&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247');
+  }
+  
+  .sticker-right {
+    top: 30px;
+    right: -60px; /* Position on the right outside the container */
+    background-image: url('https://th.bing.com/th?q=Food+Background+Images+Download&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247');
+  }
+  /* PredictedHistory.css */
+
+.back-button {
+    margin: 10px 0;
+    padding: 8px 16px;
+    background-color: #4b9cd3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .back-button:hover {
+    background-color: #357ab8;
+  }
+  
